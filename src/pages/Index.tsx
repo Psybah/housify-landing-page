@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import ProblemSection from '../components/ProblemSection';
@@ -7,6 +9,7 @@ import PartnershipsSection from '../components/PartnershipsSection';
 import Button from '../components/Button';
 import PricingDialog from '../components/PricingDialog';
 import { ArrowRight, Building, Banknote, Star } from 'lucide-react';
+
 const Index = () => {
   // Function to scroll to an element by ID
   const scrollToElement = (id: string) => {
@@ -101,7 +104,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
       
       {/* Competitive Edge Section */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-blue-50 to-white">
@@ -282,10 +284,12 @@ const Index = () => {
                 </p>
                 
                 <div className="pt-4">
-                  <Button variant="outline" size="lg" className="group inline-flex items-center">
-                    <span>Get Early Access</span>
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Button>
+                  <Link to="/waitlist">
+                    <Button variant="outline" size="lg" className="group inline-flex items-center">
+                      <span>Get Early Access</span>
+                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </Link>
                 </div>
                 
                 <div className="flex items-center space-x-4 pt-4">
@@ -339,10 +343,12 @@ const Index = () => {
                     </div>
                   </div>
                   
-                  <Button variant="primary" size="lg" className="w-full mt-4 inline-flex items-center justify-center">
-                    <span>Join Our Waitlist</span>
-                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Button>
+                  <Link to="/waitlist">
+                    <Button variant="primary" size="lg" className="w-full mt-4 inline-flex items-center justify-center">
+                      <span>Join Our Waitlist</span>
+                      <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -393,10 +399,10 @@ const Index = () => {
             <div>
               <h3 className="text-sm font-semibold uppercase tracking-wider mb-4">Company</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About</a></li>
+                <li><a href="/about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>

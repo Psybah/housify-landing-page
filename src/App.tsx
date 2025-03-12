@@ -7,12 +7,14 @@ import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Suspense, useEffect, useState } from "react";
 import Index from "./pages/Index";
 import FAQ from "./pages/FAQ";
+import Waitlist from "./pages/Waitlist";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import LoadingScreen from "./components/LoadingScreen";
 
 const queryClient = new QueryClient();
 
-// Component to handle page transitions
 const PageTransition = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   const [isLoading, setIsLoading] = useState(true);
@@ -53,7 +55,21 @@ const App = () => (
               <PageTransition><FAQ /></PageTransition>
             </Suspense>
           } />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/waitlist" element={
+            <Suspense fallback={<LoadingScreen />}>
+              <PageTransition><Waitlist /></PageTransition>
+            </Suspense>
+          } />
+          <Route path="/contact" element={
+            <Suspense fallback={<LoadingScreen />}>
+              <PageTransition><Contact /></PageTransition>
+            </Suspense>
+          } />
+          <Route path="/about" element={
+            <Suspense fallback={<LoadingScreen />}>
+              <PageTransition><About /></PageTransition>
+            </Suspense>
+          } />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

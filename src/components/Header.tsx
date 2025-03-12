@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import Button from './Button';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -50,9 +51,14 @@ const Header: React.FC = () => {
           <a href="#market" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
             Market
           </a>
-          <Button variant="primary" size="sm">
-            Get Early Access
-          </Button>
+          <Link to="/contact" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
+            Contact
+          </Link>
+          <Link to="/waitlist">
+            <Button variant="primary" size="sm">
+              Get Early Access
+            </Button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -69,9 +75,9 @@ const Header: React.FC = () => {
         )}
       >
         <div className="flex justify-between items-center mb-8">
-        <a href="/" className="flex items-center">
-          <img src="/logo.png" alt="Housify" className="h-10" />
-        </a>
+          <a href="/" className="flex items-center">
+            <img src="/logo.png" alt="Housify" className="h-10" />
+          </a>
           <button onClick={toggleMobileMenu}>
             <X className="h-6 w-6 text-housify-blue" />
           </button>
@@ -99,9 +105,18 @@ const Header: React.FC = () => {
           >
             Market
           </a>
-          <Button variant="primary" size="lg" className="mt-4" onClick={toggleMobileMenu}>
-            Get Early Access
-          </Button>
+          <Link 
+            to="/contact" 
+            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"
+            onClick={toggleMobileMenu}
+          >
+            Contact
+          </Link>
+          <Link to="/waitlist">
+            <Button variant="primary" size="lg" className="mt-4" onClick={toggleMobileMenu}>
+              Get Early Access
+            </Button>
+          </Link>
         </nav>
       </div>
     </header>

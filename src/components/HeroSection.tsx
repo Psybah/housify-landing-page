@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Button from './Button';
 import PhoneMockup from './PhoneMockup';
 
@@ -39,13 +40,17 @@ const HeroSection: React.FC = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="primary" size="lg" className="group inline-flex items-center justify-center">
-                <span>Get Early Access</span>
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              <Button variant="secondary" size="lg" className="inline-flex items-center justify-center">
-                <span>Learn More</span>
-              </Button>
+              <Link to="/waitlist">
+                <Button variant="primary" size="lg" className="group inline-flex items-center justify-center">
+                  <span>Get Early Access</span>
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+              <Link to="/waitlist">
+                <Button variant="secondary" size="lg" className="inline-flex items-center justify-center">
+                  <span>Learn More</span>
+                </Button>
+              </Link>
             </div>
             
             <div className="flex items-center space-x-4 mt-4">
