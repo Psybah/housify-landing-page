@@ -356,7 +356,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
             <a href="/" className="flex items-center">
-              <img src="/logo.png" alt="Housify" className="h-10 invert" />
+              <img src="/Footer.png" alt="Housify" className="h-10" />
             </a>
               <p className="text-gray-400 mb-6 max-w-md">
                 Find & secure your next home in Nigeria – no agents, no stress!

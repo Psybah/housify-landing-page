@@ -10,6 +10,17 @@ const HeroSection: React.FC = () => {
       <div className="absolute top-0 inset-0 -z-10 bg-gradient-to-b from-white to-blue-50/50" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_80%_20%,rgba(2,43,96,0.05),rgba(255,255,255,0))]" />
       
+      {/* Map Background */}
+      <div 
+        className="absolute inset-0 -z-10 opacity-50 blur-[3px]"
+        style={{
+          backgroundImage: 'url(/Map.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      
       <div className="container-width">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 section-padding">
           {/* Left Column - Text Content */}
@@ -57,9 +68,8 @@ const HeroSection: React.FC = () => {
           </div>
           
           {/* Right Column - Visual Elements */}
-          <div className="relative h-[600px] flex items-center justify-center overflow-hidden">
-                       
-            {/* Phone in the foreground*/}
+          <div className="relative h-[650px] flex items-center justify-center">
+            {/* Phone in the foreground */}
             <div className="relative z-10">
               <PhoneMockup />
             </div> 
