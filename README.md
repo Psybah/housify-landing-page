@@ -7,7 +7,7 @@
 
 Housify is a smart real estate platform designed to transform the house hunting experience in Nigeria. Our platform connects house seekers directly with landlords, eliminating middlemen and unnecessary costs. Whether you're looking for a new apartment, a short-term rental, or a permanent home, Housify makes the search simple, transparent, and hassle-free.
 
-**Live Demo**: [Housify App](https://lovable.dev/projects/f64e400f-af66-4656-92a5-afec542595b3)
+**Live Demo**: [Housify App](...)
 
 ## 🚀 Our Mission
 
@@ -83,12 +83,12 @@ housify/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Psybah/housify-landing-page
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd housify
+   cd housify-landing-page
    ```
 
 3. Install dependencies:
@@ -101,7 +101,7 @@ housify/
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:5173`
+5. Open your browser and visit `http://localhost:8080`
 
 ## 📱 Mobile App
 
@@ -127,4 +127,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-&copy; 2023 Housify. All rights reserved.
+&copy; 2025 Housify. All rights reserved.
