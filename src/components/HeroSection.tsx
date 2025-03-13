@@ -6,7 +6,7 @@ import PhoneMockup from './PhoneMockup';
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden flex pt-8 items-center">
+    <div className="relative min-h-screen overflow-hidden flex items-center">
       {/* Background Elements */}
       <div className="absolute top-0 inset-0 -z-10 bg-gradient-to-b from-white to-blue-50/50" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_80%_20%,rgba(2,43,96,0.05),rgba(255,255,255,0))]" />
