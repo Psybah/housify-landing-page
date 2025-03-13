@@ -24,7 +24,7 @@ const TeamMember = ({ name, role, avatar, socials }: {
       <img 
         src={avatar} 
         alt={name} 
-        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-housify-orange"
+        className="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-8 border-white/30 backdrop-blur-xl bg-white/10"
       />
       <h3 className="text-xl font-bold text-center mb-1">{name}</h3>
       <p className="text-white/70 text-center mb-4">{role}</p>
@@ -46,9 +46,6 @@ const TeamMember = ({ name, role, avatar, socials }: {
 };
 
 const About = () => {
-  // Generate dicebar avatars for team members
-  const getAvatarUrl = (seed: string) => `https://avatars.dicebear.com/api/micah/${seed}.svg`;
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-housify-blue to-[#001830] text-white relative">
       <div className="absolute inset-0 -z-10 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIwLjQiPgogICAgICAgICAgICA8cGF0aCBkPSJNMzYgMzRjMC0yLjIwOS0xLjc5MS00LTQtNHMtNCAxLjc5MS00IDQgMS43OTEgNCA0IDQgNC0xLjc5MSA0LTRtMi0xMHYtOGgtNHY4aDRtLTEyIDB2LThoLTR2OGg0bTEyIDI0di04aC00djhoNG0tMTIgMHYtOGgtNHY4aDRtLTEyLTI0di04aC00djhoNG0wIDI0di04aC00djhoNFY0OG0xMi00OHYtNGgtNHY0aDRtLTEyIDB2LTRoLTR2NGg0TTQgNDh2LTRIMHYiLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==')]" />
@@ -218,9 +215,9 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         
             <TeamMember 
-              name="Emmanuel Adewole" 
-              role="Flutter Developer"
-              avatar={getAvatarUrl("emmanuel")}
+              name="Mastemind" 
+              role="Mobile Developer"
+              avatar="./team/Mastermind.jpeg"
               socials={[
                 { type: 'twitter', url: 'https://x.com/d3Mastermind' },
                 { type: 'github', url: 'https://github.com/d3mastermind' }
@@ -228,9 +225,9 @@ const About = () => {
             />
 
             <TeamMember 
-              name="Abiodun Oluwamurewa" 
+              name="Cybersmith" 
               role="Team Lead"
-              avatar={getAvatarUrl("abiodun")}
+              avatar="./team/smith.png"
               socials={[
                 { type: 'linkedin', url: 'https://www.linkedin.com/in/oluwamurewa/' },
                 { type: 'twitter', url: 'https://x.com/_cybersmith' },
@@ -239,9 +236,9 @@ const About = () => {
             />
             
             <TeamMember 
-              name="Leslie Young" 
+              name="Youngestage" 
               role="Frontend Developer"
-              avatar={getAvatarUrl("leslie")}
+              avatar="./team/leslie.png"
               socials={[
                 { type: 'twitter', url: 'https://x.com/_youngestage' },
                 { type: 'github', url: 'https://github.com/youngestage' }

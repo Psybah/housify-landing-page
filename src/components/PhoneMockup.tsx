@@ -13,9 +13,9 @@ const PhoneMockup: React.FC<PhoneMockupProps> = ({
   return (
     <div className={cn('relative animate-float py-12', className)}>
       {/* iPhone Frame */}
-      <div className="relative w-[280px] h-[570px] rounded-[40px] border-[14px] border-[#022b60] bg-[#022b60] shadow-xl overflow-hidden">
+      <div className="relative w-[280px] h-[570px] rounded-[40px] border-[14px] border-[#1A1A1A] bg-[#1A1A1A] shadow-xl overflow-hidden">
         {/* Notch */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-6 w-40 bg-[#022b60] rounded-b-lg z-20" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 h-6 w-40 bg-[#1A] rounded-b-lg z-20" />
         
         {/* Screen */}
         <div className="relative h-full w-full rounded-[28px] overflow-hidden bg-gray-100">

@@ -31,7 +31,7 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-8 transition-all duration-300">
       <div
         className={cn(
-          'mx-auto rounded-full glass-morphism transition-all duration-500 py-3 px-4 md:px-6',
+          'mx-auto max-w-screen-xl rounded-full glass-morphism transition-all duration-500 py-3 px-4 md:px-6',
           'flex items-center justify-between',
           scrolled ? 'shadow-lg' : 'shadow'
         )}
@@ -51,6 +51,12 @@ const Header: React.FC = () => {
           <a href="#market" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
             Market
           </a>
+          <Link to="/about" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
+            About
+          </Link>
+          <Link to="/faq" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
+            FAQ
+          </Link>
           <Link to="/contact" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
             Contact
           </Link>
@@ -105,6 +111,20 @@ const Header: React.FC = () => {
           >
             Market
           </a>
+          <Link 
+            to="/about" 
+            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"
+            onClick={toggleMobileMenu}
+          >
+            About
+          </Link>
+          <Link 
+            to="/faq" 
+            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"
+            onClick={toggleMobileMenu}
+          >
+            FAQ
+          </Link>
           <Link 
             to="/contact" 
             className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"

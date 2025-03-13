@@ -18,7 +18,7 @@ const PricingDialog: React.FC<PricingDialogProps> = ({ trigger }) => {
   return (
     <Dialog>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
-      <DialogContent className="sm:max-w-4xl overflow-y-auto max-h-[90vh]">
+      <DialogContent className="sm:max-w-5xl overflow-y-auto max-h-[90vh]">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold">
             <span className="text-housify-blue">Housify</span> Simple, Transparent Pricing

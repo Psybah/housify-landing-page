@@ -11,28 +11,28 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    text: "I found my new home in 2 days! No agent fees, no stress.",
-    name: "Aisha O.",
+    text: "Tolu stays in Ibadan and gets a job in Lagos. She lists her current apartment that she's leaving on our app and gets points for it. Tolu then uses the points to view other listings in Lagos where she's relocating.",
+    name: "Tolu A.",
+    location: "Ibadan, Nigeria",
+    seed: "tolu"
+  },
+  {
+    text: "Ade just graduated from the University of Ibadan and will be leaving his apartment. He posts his apartment on the platform for other students who might be interested in renting it.",
+    name: "Ade B.",
+    location: "Ibadan, Nigeria",
+    seed: "ade"
+  },
+  {
+    text: "Bello’s neighbor just relocated, leaving behind a vacant apartment. As the first to know, Bello quickly lists it on our platform, ensuring that someone in need of a home can find it.",
+    name: "Bello C.",
     location: "Lagos, Nigeria",
-    seed: "aisha"
+    seed: "bello"
   },
   {
-    text: "After months of dealing with agents, Housify connected me directly to my landlord. Saved me over ₦200,000 in fees!",
-    name: "Emmanuel T.",
-    location: "Abuja, Nigeria",
-    seed: "emmanuel"
-  },
-  {
-    text: "The map feature made it so easy to find houses near my workplace. Game changer!",
+    text: "Chioma just got married and is moving into a new home with her spouse. Instead of letting her old apartment sit empty, she lists it on our platform so someone else can move in hassle-free.",
     name: "Chioma N.",
     location: "Port Harcourt, Nigeria",
     seed: "chioma"
-  },
-  {
-    text: "As a landlord, I love that I can list my properties directly. More profit, better tenants.",
-    name: "Babatunde K.",
-    location: "Ibadan, Nigeria",
-    seed: "babatunde"
   }
 ];
 
@@ -56,7 +56,7 @@ const TestimonialsCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative max-w-2xl mx-auto glass-card p-8">
+    <div className="relative max-w-5xl mx-auto glass-card p-8">
       <div className="absolute top-1/2 -left-4 transform -translate-y-1/2">
         <button 
           onClick={prevTestimonial}
@@ -102,7 +102,7 @@ const TestimonialsCarousel: React.FC = () => {
                   />
                   <div className="text-left">
                     <div className="font-medium">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">{testimonial.location}</div>
+                    <div className="text-sm text-gray-700">{testimonial.location}</div>
                   </div>
                 </div>
               </div>

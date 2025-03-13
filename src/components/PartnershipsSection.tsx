@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building, CreditCard, Users } from 'lucide-react';
+import { CreditCard, User } from 'lucide-react';
 
 const PartnershipsSection: React.FC = () => {
   return (
@@ -18,28 +18,18 @@ const PartnershipsSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="glass-card p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          <div className="glass-card p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 w-80">
             <div className="w-14 h-14 bg-housify-blue/10 rounded-full flex items-center justify-center mb-4">
-              <Building className="h-7 w-7 text-housify-blue" />
+              <User className="h-7 w-7 text-housify-blue" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Real Estate Developers</h3>
+            <h3 className="text-xl font-semibold mb-2">You</h3>
             <p className="text-gray-600">
-              Partnering with top developers to bring new properties directly to users without intermediaries.
+              Yes you! List a house, drop a tip—let’s fix this housing wahala together!
             </p>
           </div>
 
-          <div className="glass-card p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
-            <div className="w-14 h-14 bg-housify-blue/10 rounded-full flex items-center justify-center mb-4">
-              <Users className="h-7 w-7 text-housify-blue" />
-            </div>
-            <h3 className="text-xl font-semibold mb-2">Housing Cooperatives</h3>
-            <p className="text-gray-600">
-              Working with housing cooperatives to offer exclusive listings and special rates to their members.
-            </p>
-          </div>
-
-          <div className="glass-card p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+          <div className="glass-card p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300 w-80">
             <div className="w-14 h-14 bg-housify-blue/10 rounded-full flex items-center justify-center mb-4">
               <CreditCard className="h-7 w-7 text-housify-blue" />
             </div>

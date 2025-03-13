@@ -39,10 +39,6 @@ const SolutionSection: React.FC = () => {
                 </p>
               </div>
             </div>
-            {/* Arrow connector (desktop only) */}
-            <div className="hidden md:block absolute top-1/2 -right-3 transform translate-y-1/2">
-              <ChevronRight className="h-6 w-6 text-gray-300" />
-            </div>
           </div>
 
           {/* Step 2 */}
@@ -58,10 +54,6 @@ const SolutionSection: React.FC = () => {
                   Use Housify Points (HP) to unlock verified landlord contacts directly.
                 </p>
               </div>
-            </div>
-            {/* Arrow connector (desktop only) */}
-            <div className="hidden md:block absolute top-1/2 -right-3 transform translate-y-1/2">
-              <ChevronRight className="h-6 w-6 text-gray-300" />
             </div>
           </div>
 

@@ -91,14 +91,17 @@ const Index = () => {
                 </p>
               </div>
               
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 relative">
                 <div className="w-10 h-10 rounded-full bg-housify-orange/20 flex items-center justify-center mb-4">
                   <Star className="h-5 w-5 text-housify-orange" />
                 </div>
-                <h4 className="text-lg font-medium mb-2">Premium Services</h4>
+                <h4 className="text-lg font-medium mb-2">Transaction Fees</h4>
                 <p className="text-white/70 text-sm">
-                  Verified landlords get exclusive tools
+                  A small fee on rent payments processed through the platform.
                 </p>
+                <span className="absolute top-2 right-2 text-xs font-medium py-1 px-2 rounded-full bg-housify-orange text-white">
+                  Coming Soon
+                </span>
               </div>
             </div>
           </div>
@@ -195,7 +198,7 @@ const Index = () => {
                   </div>
                   <div>
                     <div className="font-medium">Backend</div>
-                    <div className="text-sm text-gray-600">Node.js (Hono.js) + MongoDB</div>
+                    <div className="text-sm text-gray-600">Firebase</div>
                   </div>
                 </li>
                 <li className="flex items-center">
@@ -212,7 +215,7 @@ const Index = () => {
                     <span className="text-purple-600 font-semibold">V</span>
                   </div>
                   <div>
-                    <div className="font-medium">Verification</div>
+                    <div className="font-medium">Verification <span className="text-xs text-red-500">(Coming Soon)</span></div>
                     <div className="text-sm text-gray-600">AI-powered fraud detection</div>
                   </div>
                 </li>
@@ -254,7 +257,7 @@ const Index = () => {
                     <span className="text-housify-blue text-xs">✓</span>
                   </div>
                   <div>
-                    <div className="font-medium">AI Verification</div>
+                    <div className="font-medium">AI Verification <span className="text-xs text-red-500">(Coming Soon)</span></div>
                     <div className="text-sm text-gray-600">Detects & reduces fake listings</div>
                   </div>
                 </li>

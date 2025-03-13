@@ -5,7 +5,7 @@
 
 ## Overview
 
-Housify is a smart real estate platform designed to transform the house hunting experience in Nigeria. Our platform connects house seekers directly with landlords, eliminating middlemen and unnecessary costs. Whether you're looking for a new apartment, a short-term rental, or a permanent home, Housify makes the search simple, transparent, and hassle-free.
+Housify is a proptech solution designed to transform the house hunting experience in Nigeria. Our platform connects house seekers directly with landlords, eliminating middlemen and unnecessary costs. Whether you're looking for a new apartment, a short-term rental, or a permanent home, Housify makes the search simple, transparent, and hassle-free.
 
 **Live Demo**: [Housify App](...)
 
@@ -40,7 +40,7 @@ To make house hunting in Nigeria easy, affordable, and 100% transparent by lever
 
 ## 🌟 Features
 
-- **Interactive Property Map**: View available properties on a map
+- **Interactive Property Map**: View available property listing
 - **Advanced Search Filters**: Find properties by location, price, amenities
 - **Direct Contact System**: Directly message landlords through the platform
 - **Housify Points System**: Flexible credit system for accessing listings
@@ -105,14 +105,14 @@ housify/
 
 ## 📱 Mobile App
 
-Housify is also available as a mobile application built with Flutter. The mobile app offers the same core functionality with additional features optimized for on-the-go house hunting.
+Housify is also available as a mobile application built with React Native.
 
 ## 📧 Contact Us
 
 For questions, feedback, or partnership inquiries:
 
 - **Email**: abiodunoluwamurewa@gmail.com
-- **Phone**: +234 800 HOUSIFY
+- **Phone**: +234 701 454 1564
 - **Location**: Lagos, Nigeria
 
 ## 📄 License
