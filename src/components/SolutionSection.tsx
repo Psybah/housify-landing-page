@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MapPin, Key, Home, ChevronRight } from 'lucide-react';
+import { MapPin, Key, Coins, ChevronRight } from 'lucide-react';
 import Button from './Button';
 import TestimonialsCarousel from './TestimonialsCarousel';
 
@@ -35,7 +35,7 @@ const SolutionSection: React.FC = () => {
                 <MapPin className="h-8 w-8 text-housify-blue mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Search Nearby</h3>
                 <p className="text-gray-600">
-                  Search for homes near you with our interactive map and smart filters.
+                  Search for homes near you with our smart filters.
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@ const SolutionSection: React.FC = () => {
                 3
               </div>
               <div className="pt-6 pb-4">
-                <Home className="h-8 w-8 text-housify-blue mb-4" />
+                <Coins className="h-8 w-8 text-housify-blue mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Earn Rewards</h3>
                 <p className="text-gray-600">
                   List properties and earn HP rewards when others view your listings.

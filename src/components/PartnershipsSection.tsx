@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CreditCard, User } from 'lucide-react';
 
@@ -14,7 +13,7 @@ const PartnershipsSection: React.FC = () => {
             Strategic <span className="text-housify-blue">Alliances</span>
           </h2>
           <p className="text-gray-600 text-lg">
-            We're working with industry leaders to transform the housing experience
+            Partnering with both our community and financial institutions to make housing accessible and affordable
           </p>
         </div>
 
@@ -25,7 +24,7 @@ const PartnershipsSection: React.FC = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">You</h3>
             <p className="text-gray-600">
-              Yes you! List a house, drop a tip—let’s fix this housing wahala together!
+              Yes you! List a house, drop a tip—let's fix this housing wahala together!
             </p>
           </div>
 

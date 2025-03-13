@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, ArrowLeft, Send, Linkedin, Twitter, Instagram, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Twitter, Instagram, Github } from 'lucide-react';
 import Button from '@/components/Button';
 import { useToast } from "@/hooks/use-toast";
 import emailjs from 'emailjs-com';
+import Header from '@/components/Header';
 
 // Initialize EmailJS
 emailjs.init("dBcCnD64kbsHx0wPC"); // This should be your EmailJS public key
@@ -84,16 +84,10 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-housify-blue to-[#001830] text-white">
-      {/* Header with Back Button */}
-      <div className="container-width py-6 px-6 md:px-12">
-        <Link to="/" className="flex items-center gap-2 text-white hover:text-housify-orange transition-colors">
-          <ArrowLeft size={20} />
-          <span>Back to Home</span>
-        </Link>
-      </div>
-
+      <Header />
+      
       {/* Contact Content */}
-      <div className="container-width section-padding pb-24">
+      <div className="container-width section-padding pb-24 pt-24">
         <div className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
           <p className="text-white/70 max-w-2xl mx-auto">
@@ -116,10 +110,10 @@ const Contact = () => {
                   <div className="overflow-hidden">
                     <h3 className="font-medium mb-1">Email</h3>
                     <a 
-                      href="mailto:abiodunoluwamurewa@gmail.com" 
+                      href="mailto:cybersmithstudios@gmail.com" 
                       className="text-white hover:text-housify-orange transition-colors break-words"
                     >
-                      abiodunoluwamurewa@gmail.com
+                      cybersmithstudios@gmail.com
                     </a>
                   </div>
                 </div>

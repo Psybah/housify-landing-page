@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Search, CreditCard, Phone, Home, Check, Linkedin, Twitter, Instagram, Github } from 'lucide-react';
+import { ArrowLeft, Search, LockOpen, Phone, CirclePlus, Check, Linkedin, Twitter, Instagram, Github } from 'lucide-react';
 import Button from '@/components/Button';
+import Header from '@/components/Header';
 
 const TeamMember = ({ name, role, avatar, socials }: { 
   name: string; 
@@ -48,20 +49,12 @@ const TeamMember = ({ name, role, avatar, socials }: {
 const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-housify-blue to-[#001830] text-white relative">
-      <div className="absolute inset-0 -z-10 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgZmlsbD0iI2ZmZmZmZiIgZmlsbC1vcGFjaXR5PSIwLjQiPgogICAgICAgICAgICA8cGF0aCBkPSJNMzYgMzRjMC0yLjIwOS0xLjc5MS00LTQtNHMtNCAxLjc5MS00IDQgMS43OTEgNCA0IDQgNC0xLjc5MSA0LTRtMi0xMHYtOGgtNHY4aDRtLTEyIDB2LThoLTR2OGg0bTEyIDI0di04aC00djhoNG0tMTIgMHYtOGgtNHY4aDRtLTEyLTI0di04aC00djhoNG0wIDI0di04aC00djhoNFY0OG0xMi00OHYtNGgtNHY0aDRtLTEyIDB2LTRoLTR2NGg0TTQgNDh2LTRIMHYiLz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==')]" />
-      
-      {/* Header with Back Button */}
-      <div className="container-width py-6 px-6 md:px-12">
-        <Link to="/" className="flex items-center gap-2 text-white hover:text-housify-orange transition-colors">
-          <ArrowLeft size={20} />
-          <span>Back to Home</span>
-        </Link>
-      </div>
+      <Header />
 
       {/* Hero Section */}
       <div className="container-width section-padding">
       
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Housify</h1>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
             Revolutionizing House Hunting in Nigeria
@@ -74,7 +67,7 @@ const About = () => {
               Finding a home in Nigeria shouldn't be stressful, expensive, or filled with endless agent fees. Housify was built to change that.
             </p>
             <p className="text-lg mb-6">
-              We are a smart real estate platform that connects house seekers directly with landlords, eliminating middlemen and unnecessary costs. Whether you're looking for a new apartment, a short-term rental, or a permanent home, Housify makes the search simple, transparent, and hassle-free.
+              We are a proptech solution that connects house seekers directly with landlords, eliminating middlemen and unnecessary costs. Whether you're looking for a new apartment, a short-term rental, or a permanent home, Housify makes the search simple, transparent, and hassle-free.
             </p>
             
             <div className="mt-10">
@@ -97,13 +90,13 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Browse Listings</h3>
               <p className="text-white/70">
-                Explore verified homes near you on an interactive map.
+                Explore verified homes near you with smart filters.
               </p>
             </div>
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <div className="w-12 h-12 rounded-full bg-housify-orange/20 flex items-center justify-center mb-4">
-                <CreditCard className="h-6 w-6 text-housify-orange" />
+                <LockOpen className="h-6 w-6 text-housify-orange" />
               </div>
               <h3 className="text-xl font-bold mb-2">Unlock Contact Details</h3>
               <p className="text-white/70">
@@ -123,11 +116,11 @@ const About = () => {
             
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <div className="w-12 h-12 rounded-full bg-housify-orange/20 flex items-center justify-center mb-4">
-                <Home className="h-6 w-6 text-housify-orange" />
+                <CirclePlus className="h-6 w-6 text-housify-orange" />
               </div>
-              <h3 className="text-xl font-bold mb-2">List Your Property</h3>
+              <h3 className="text-xl font-bold mb-2">List a Property</h3>
               <p className="text-white/70">
-                Landlords can upload their properties for free, with boosted listing options.
+                Users and landlords can list a property for free, with boosted listing options.
               </p>
             </div>
           </div>

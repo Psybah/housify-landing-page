@@ -1,11 +1,11 @@
 import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 
-export function Iphone15ProDemo() {
+export default function PhoneMockup() {
   return (
     <div className="relative">
       <Iphone15Pro
-        className="size-full"
-        src="https://via.placeholder.com/430x880"
+        className="w-[200px] h-[500px] md:w-[240px] md:h-[580px]"
+        src="mockup.jpeg"
       />
     </div>
   );
