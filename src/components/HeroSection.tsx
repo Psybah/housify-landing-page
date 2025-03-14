@@ -6,7 +6,7 @@ import PhoneMockup from './PhoneMockup';
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden flex items-center">
+    <div className="relative min-h-screen pt-16 md:pt-30">
       {/* Background Elements */}
       <div className="absolute top-0 inset-0 -z-10 bg-gradient-to-b from-white to-blue-50/50" />
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_80%_20%,rgba(2,43,96,0.05),rgba(255,255,255,0))]" />
@@ -22,10 +22,10 @@ const HeroSection: React.FC = () => {
         }}
       />
       
-      <div className="container-width">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 section-padding">
+      <div className="container-width h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 section-padding min-h-[calc(100vh-6rem)]">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col justify-center space-y-8 animate-fade-in">
+          <div className="flex flex-col justify-center space-y-8 animate-fade-in max-w-2xl mx-auto lg:mx-0">
             <div className="space-y-3">
               <div className="inline-block text-xs font-medium py-1 px-3 rounded-full bg-housify-blue/10 text-housify-blue animate-fade-in">
                 No Agents, No Stress
@@ -73,15 +73,15 @@ const HeroSection: React.FC = () => {
           </div>
           
           {/* Right Column - Visual Elements */}
-          <div className="relative h-[650px] flex items-center justify-center">
+          <div className="flex items-center justify-center">
             {/* Phone in the foreground */}
-            <div className="relative z-10">
+            <div className="relative">
               <PhoneMockup />
-            </div> 
-            
-            {/* Accent elements */}
-            <div className="absolute top-1/3 left-[5%] w-6 h-6 rounded-full bg-housify-orange/20 animate-pulse-subtle" />
-            <div className="absolute bottom-1/4 right-[15%] w-4 h-4 rounded-full bg-housify-blue/30 animate-pulse-subtle" />
+              
+              {/* Accent elements */}
+              <div className="absolute top-1/3 -left-8 w-6 h-6 rounded-full bg-housify-orange/20 animate-pulse-subtle" />
+              <div className="absolute bottom-1/4 -right-4 w-4 h-4 rounded-full bg-housify-blue/30 animate-pulse-subtle" />
+            </div>
           </div>
         </div>
       </div>
