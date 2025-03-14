@@ -3,6 +3,7 @@ import React from 'react';
 import { MapPin, Key, Coins, ChevronRight } from 'lucide-react';
 import Button from './Button';
 import TestimonialsCarousel from './TestimonialsCarousel';
+import DualListingTypes from './DualListingTypes';
 
 const SolutionSection: React.FC = () => {
   return (
@@ -73,9 +74,12 @@ const SolutionSection: React.FC = () => {
             </div>
           </div>
         </div>
+        
+        {/* Dual Listing Types Component */}
+        <DualListingTypes />
 
         {/* Demo GIF */}
-        <div id="demo" className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden mb-16">
+        <div id="demo" className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden my-16">
           <div className="aspect-video bg-gray-100 flex items-center justify-center">
             <div className="text-gray-400 text-lg">
               Quick demo video placeholder

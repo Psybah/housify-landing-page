@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -23,19 +24,19 @@ const HeroSection: React.FC = () => {
       />
       
       <div className="container-width h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 section-padding min-h-[calc(100vh-6rem)]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 section-padding min-h-[calc(100vh-6rem)] items-center">
           {/* Left Column - Text Content */}
-          <div className="flex flex-col justify-center space-y-8 animate-fade-in max-w-2xl mx-auto lg:mx-0">
+          <div className="flex flex-col justify-center space-y-8 animate-fade-in">
             <div className="space-y-3">
               <div className="inline-block text-xs font-medium py-1 px-3 rounded-full bg-housify-blue/10 text-housify-blue animate-fade-in">
-                No Agents, No Stress
+                No Agents, No Scams
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
                 Find & Secure Your Next {' '}
                 <span className="text-housify-blue">Home in Nigeria</span>
               </h1>
               <p className="text-gray-600 text-lg mt-4 md:text-xl max-w-xl">
-                The fastest way to find verified homes near you. Earn rewards for listing houses, and unlock landlord contacts with Housify Points (HP).
+                The fastest way to find verified homes near you. Every listing is physically checked to ensure it's real and available.
               </p>
             </div>
             
@@ -73,15 +74,8 @@ const HeroSection: React.FC = () => {
           </div>
           
           {/* Right Column - Visual Elements */}
-          <div className="flex items-center justify-center">
-            {/* Phone in the foreground */}
-            <div className="relative">
-              <PhoneMockup />
-              
-              {/* Accent elements */}
-              <div className="absolute top-1/3 -left-8 w-6 h-6 rounded-full bg-housify-orange/20 animate-pulse-subtle" />
-              <div className="absolute bottom-1/4 -right-4 w-4 h-4 rounded-full bg-housify-blue/30 animate-pulse-subtle" />
-            </div>
+          <div className="flex items-center justify-center h-[500px] md:h-[580px]">
+            <PhoneMockup />
           </div>
         </div>
       </div>

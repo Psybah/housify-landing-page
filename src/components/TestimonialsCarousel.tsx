@@ -50,7 +50,7 @@ const TestimonialsCarousel: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextTestimonial();
-    }, 5000);
+    }, 30000);
 
     return () => clearInterval(interval);
   }, []);
