@@ -69,7 +69,7 @@ const TechSection: React.FC = () => {
                 </div>
                 <div>
                   <div className="font-medium">Payments</div>
-                  <div className="text-sm text-gray-600">Squad API (for HP purchases)</div>
+                  <div className="text-sm text-gray-600">Squad API</div>
                 </div>
               </li>
               <li className="flex items-center">
@@ -92,8 +92,8 @@ const TechSection: React.FC = () => {
                   <span className="text-housify-blue text-xs">✓</span>
                 </div>
                 <div>
-                  <div className="font-medium">Map-Based Listings</div>
-                  <div className="text-sm text-gray-600">Live house locations, user's GPS</div>
+                  <div className="font-medium">Intuitive Listings View</div>
+                  <div className="text-sm text-gray-600">Scroll through house listings with essential details at a glance</div>
                 </div>
               </li>
               <li className="flex items-start">
@@ -101,7 +101,7 @@ const TechSection: React.FC = () => {
                   <span className="text-housify-blue text-xs">✓</span>
                 </div>
                 <div>
-                  <div className="font-medium">Gamified Rewards System</div>
+                  <div className="font-medium">  Rewards System</div>
                   <div className="text-sm text-gray-600">Earn HP for contributions</div>
                 </div>
               </li>

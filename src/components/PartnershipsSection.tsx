@@ -32,9 +32,9 @@ const PartnershipsSection: React.FC = () => {
             <div className="w-14 h-14 bg-housify-blue/10 rounded-full flex items-center justify-center mb-4">
               <CreditCard className="h-7 w-7 text-housify-blue" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Digital Banking Partners</h3>
+            <h3 className="text-xl font-semibold mb-2">Payment Partner</h3>
             <p className="text-gray-600">
-              Collaborating with <img src="/squad.png" alt="Squad" className="inline-block h-6 mx-1" /> to streamline payments and offer rent financing options.
+              Collaborating with <img src="/squad.png" alt="Squad" className="inline-block h-6 mx-1" /> to streamline payments.
             </p>
           </div>
 

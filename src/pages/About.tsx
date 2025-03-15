@@ -67,7 +67,7 @@ const About = () => {
               Finding a home in Nigeria shouldn't be stressful, expensive, or filled with endless agent fees. Housify was built to change that.
             </p>
             <p className="text-lg mb-6">
-              We are a proptech solution that connects house seekers directly with landlords, eliminating middlemen and unnecessary costs. Whether you're looking for a new apartment, a short-term rental, or a permanent home, Housify makes the search simple, transparent, and hassle-free.
+              We are a proptech solution that connects house seekers directly with landlords, eliminating unnecessary costs. Whether you're looking for a new apartment, a short-term rental, or a permanent home, Housify makes the search simple, transparent, and hassle-free.
             </p>
             
             <div className="mt-10">

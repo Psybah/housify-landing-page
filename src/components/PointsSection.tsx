@@ -96,17 +96,17 @@ const PointsSection: React.FC = () => {
                   
                   <div className="flex justify-between items-center pb-4 border-b border-gray-100">
                     <span className="text-gray-600">100 HP</span>
-                    <span className="font-medium">₦500</span>
+                    <span className="font-medium">₦1,000</span>
                   </div>
                   
                   <div className="flex justify-between items-center pb-4 border-b border-gray-100">
                     <span className="text-gray-600">250 HP</span>
-                    <span className="font-medium">₦1,200</span>
+                    <span className="font-medium">₦2,500</span>
                   </div>
                   
                   <div className="flex justify-between items-center pb-4 border-b border-gray-100">
                     <span className="text-gray-600">400 HP</span>
-                    <span className="font-medium">₦1,800</span>
+                    <span className="font-medium">₦4,000</span>
                   </div>
                   
                   <div className="flex justify-between items-center">

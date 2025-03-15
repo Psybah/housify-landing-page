@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { CreditCard, BarChart3, Calendar, Bell, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
+import PhoneMockup from './PhoneMockup';
 
 const LandlordToolsSection: React.FC = () => {
   return (
@@ -21,80 +21,11 @@ const LandlordToolsSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="bg-gray-800 rounded-2xl overflow-hidden shadow-xl p-1">
-              <div className="bg-gray-900 rounded-xl p-4 text-white">
-                <div className="flex items-center justify-between mb-4">
-                  <div className="font-medium">Landlord Dashboard</div>
-                  <div className="text-xs bg-green-500/20 text-green-400 px-2 py-1 rounded-full">Live</div>
-                </div>
-                <div className="text-2xl font-bold mb-1">₦560,000</div>
-                <div className="text-xs text-gray-400 mb-6">Total rent collected this month</div>
-                
-                <div className="bg-gray-800 rounded-lg p-4 mb-6">
-                  <div className="grid grid-cols-3 gap-4 mb-4">
-                    <div>
-                      <div className="text-xs text-gray-400">Properties</div>
-                      <div className="text-lg font-semibold">5</div>
-                    </div>
-                    <div>
-                      <div className="text-xs text-gray-400">Tenants</div>
-                      <div className="text-lg font-semibold">12</div>
-                    </div>
-                    <div>
-                      <div className="text-xs text-gray-400">Occupancy</div>
-                      <div className="text-lg font-semibold">92%</div>
-                    </div>
-                  </div>
-                  
-                  <div className="h-12 bg-gray-700 rounded-md flex overflow-hidden">
-                    <div className="w-3/4 bg-gradient-to-r from-housify-blue to-blue-500"></div>
-                    <div className="w-1/12 bg-yellow-500"></div>
-                    <div className="w-1/6 bg-gray-600"></div>
-                  </div>
-                  <div className="flex justify-between text-xs mt-2 text-gray-400">
-                    <span>Paid</span>
-                    <span>Pending</span>
-                    <span>Vacant</span>
-                  </div>
-                </div>
-                
-                <div className="bg-gray-800 rounded-lg p-4">
-                  <div className="flex justify-between items-center mb-4">
-                    <div className="font-medium">Recent Activity</div>
-                    <div className="text-xs text-gray-400">View All</div>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    <div className="flex items-center">
-                      <div className="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center mr-3">
-                        <CreditCard className="h-4 w-4 text-green-400" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex justify-between">
-                          <div className="text-sm">Rent Payment</div>
-                          <div className="text-sm font-semibold text-green-400">+₦120,000</div>
-                        </div>
-                        <div className="text-xs text-gray-400">2 bedroom flat - David O.</div>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center">
-                      <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center mr-3">
-                        <Bell className="h-4 w-4 text-blue-400" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex justify-between">
-                          <div className="text-sm">New Contact</div>
-                          <div className="text-xs text-gray-400">Yesterday</div>
-                        </div>
-                        <div className="text-xs text-gray-400">Sarah viewed your 3 bedroom listing</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="flex items-center justify-center h-[500px] md:h-[580px] relative">
+            <PhoneMockup src="mockup2.jpeg" />
+            {/* Accent elements */}
+            <div className="absolute top-1/3 -left-8 w-6 h-6 rounded-full bg-green-500/20 animate-pulse-subtle" />
+            <div className="absolute bottom-1/4 -right-4 w-4 h-4 rounded-full bg-housify-blue/30 animate-pulse-subtle" />
           </div>
           
           <div className="space-y-6">

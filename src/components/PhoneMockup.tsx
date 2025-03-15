@@ -1,13 +1,16 @@
-
 import Iphone15Pro from "@/components/magicui/iphone-15-pro";
 
-export default function PhoneMockup() {
+interface PhoneMockupProps {
+  src?: string;
+}
+
+export default function PhoneMockup({ src = "mockup.jpeg" }: PhoneMockupProps) {
   return (
     <div className="flex items-center justify-center h-full">
       <div className="relative">
         <Iphone15Pro
           className="w-[220px] h-[500px] md:w-[240px] md:h-[580px]"
-          src="mockup.jpeg"
+          src={src}
         />
         
         {/* Accent elements */}
