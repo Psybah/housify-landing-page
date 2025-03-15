@@ -28,7 +28,7 @@ const LandlordToolsSection: React.FC = () => {
             <div className="absolute bottom-1/4 -right-4 w-4 h-4 rounded-full bg-housify-blue/30 animate-pulse-subtle" />
           </div>
           
-          <div className="space-y-6">
+          <div className="space-y-6">5t6
             <h3 className="text-2xl font-semibold">Manage Your Properties Effortlessly</h3>
             <p className="text-gray-600">
               Housify provides landlords with powerful tools to manage properties, collect rent, and find quality tenants - all without agent fees.

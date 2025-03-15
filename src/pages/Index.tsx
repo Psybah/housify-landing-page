@@ -35,12 +35,12 @@ const Index = () => {
       
       {/* Problem Section */}
       <ProblemSection />
-      
-      {/* User Types Section */}
-      <UserTypesSection />
-      
+            
       {/* Solution Section */}
       <SolutionSection />
+
+      {/* User Types Section */}
+      <UserTypesSection />
       
       {/* Verification Process Section */}
       <VerificationSection />
