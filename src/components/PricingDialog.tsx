@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Check, Award } from 'lucide-react';
 import {
   Dialog,
@@ -81,27 +82,28 @@ const PricingDialog: React.FC<PricingDialogProps> = ({ trigger }) => {
           </div>
           
           {/* Landlord Boost */}
-          <div className="border border-gray-200 rounded-xl p-6 bg-white hover:shadow-md transition-shadow">
-            <div className="text-lg font-semibold mb-2">Landlord Boost</div>
-            <div className="text-3xl font-bold mb-1">Get More Tenants</div>
-            <p className="text-gray-600 mb-4">Feature your listings</p>
+          <div className="border border-gray-200 rounded-xl p-6 bg-gray-100 hover:shadow-md transition-shadow relative">
+            <div className="absolute -top-3 -right-3 bg-gray-500 text-white text-xs font-bold py-1 px-3 rounded-full">COMING SOON</div>
+            <div className="text-lg font-semibold mb-2 text-gray-500">Landlord Boost</div>
+            <div className="text-3xl font-bold mb-1 text-gray-500">Get More Tenants</div>
+            <p className="text-gray-500 mb-4">Feature your listings</p>
             
             <ul className="space-y-3 mb-6">
-              <li className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+              <li className="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
                 <span>Basic Boost (3 Days)</span>
                 <span className="font-bold">₦2,000</span>
               </li>
-              <li className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+              <li className="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
                 <span>Premium Boost (7 Days)</span>
                 <span className="font-bold">₦5,000</span>
               </li>
-              <li className="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
+              <li className="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
                 <span>Ultimate Boost (14 Days + Ads)</span>
                 <span className="font-bold">₦10,000</span>
               </li>
             </ul>
             
-            <Button variant="secondary" className="w-full">Boost Your Listing</Button>
+            <Button variant="secondary" className="w-full" disabled>Boost Your Listing</Button>
             <p className="text-sm text-gray-500 mt-3 text-center">Reach more serious house seekers!</p>
           </div>
         </div>
@@ -154,7 +156,9 @@ const PricingDialog: React.FC<PricingDialogProps> = ({ trigger }) => {
         </div>
         
         <div className="mt-6 flex justify-center">
-          <Button variant="primary" size="lg">Get Started with Housify</Button>
+          <Link to="/waitlist">
+            <Button variant="primary" size="lg">Get Started with Housify</Button>
+          </Link>
         </div>
       </DialogContent>
     </Dialog>

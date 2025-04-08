@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import { MessageSquare, DollarSign, Home, CreditCard, Info, ArrowRight, ArrowLeft } from 'lucide-react';
+import { MessageSquare, Coins, Home, CreditCard, Info, ArrowRight, ArrowLeft } from 'lucide-react';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 const FAQ = () => {
@@ -49,7 +49,7 @@ const FAQ = () => {
                 <div className="bg-white rounded-xl shadow-sm p-6">
                   <h3 className="font-semibold text-lg mb-2">How does Housify work?</h3>
                   <ol className="list-decimal list-inside text-gray-600 space-y-2 ml-2">
-                    <li>Browse available properties on the map.</li>
+                    <li>Browse available listings on the app with filters.</li>
                     <li>Unlock landlord contacts using Housify Points (HP).</li>
                     <li>Contact the landlord directly to schedule a visit.</li>
                   </ol>
@@ -68,7 +68,7 @@ const FAQ = () => {
             <div className="mb-12">
               <div className="flex items-center mb-6">
                 <div className="w-10 h-10 rounded-full bg-housify-orange/10 flex items-center justify-center mr-3">
-                  <DollarSign className="h-5 w-5 text-housify-orange" />
+                  <Coins className="h-5 w-5 text-housify-orange" />
                 </div>
                 <h2 className="text-xl font-semibold">Earning & Using Housify Points (HP)</h2>
               </div>
@@ -111,7 +111,7 @@ const FAQ = () => {
                 <div className="flex items-center">
                   <h2 className="text-xl font-semibold">Payments & Refunds</h2>
                   <span className="ml-2 text-sm bg-gray-100 px-2 py-1 rounded-full flex items-center">
-                    Powered by <img src="/squad.png" alt="Squad" className="inline-block h-6 mx-1" />
+                    Powered by <img src="/squad.png" alt="Squad" className="inline-block h-4 mx-1" />
                   </span>
                 </div>
               </div>
@@ -174,12 +174,12 @@ const FAQ = () => {
                   </ul>
                 </div>
                 
-                <div className="bg-white rounded-xl shadow-sm p-6">
+                {/* <div className="bg-white rounded-xl shadow-sm p-6">
                   <h3 className="font-semibold text-lg mb-2">How do I get paid as a landlord?</h3>
                   <p className="text-gray-600">
                     You negotiate and receive payments directly from tenants. Housify does not take a commission.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
             
@@ -197,11 +197,11 @@ const FAQ = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="border border-gray-200 rounded-lg p-4 text-center">
                     <div className="font-medium mb-1">Call/WhatsApp</div>
-                    <div className="text-housify-blue">+234 90XXXXXXX</div>
+                    <div className="text-housify-blue">+234 701 454 1564</div>
                   </div>
                   <div className="border border-gray-200 rounded-lg p-4 text-center">
                     <div className="font-medium mb-1">Email</div>
-                    <div className="text-housify-blue">support@housify.ng</div>
+                    <div className="text-housify-blue">cybersmithstudios@gmail.com</div>
                   </div>
                 </div>
               </div>
@@ -211,10 +211,12 @@ const FAQ = () => {
             <div className="bg-housify-blue text-white rounded-xl p-8 text-center">
               <h2 className="text-2xl font-bold mb-4">Still have questions?</h2>
               <p className="mb-6">Our team is ready to help you with anything you need.</p>
-              <Button variant="outline" size="lg" className="group inline-flex items-center">
-                <span>Contact Support</span>
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </Button>
+              <Link to="/contact">  
+                <Button variant="outline" size="lg" className="group inline-flex items-center">
+                  <span>Contact Support</span>
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
