@@ -48,7 +48,7 @@ const TeamMember = ({ name, role, avatar, socials }: {
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-housify-blue to-[#001830] text-white relative">
+    <div className="pt-16 min-h-screen bg-gradient-to-b from-housify-blue to-[#001830] text-white relative">
       <Header />
 
       {/* Hero Section */}

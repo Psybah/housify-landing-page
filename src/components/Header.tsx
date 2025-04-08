@@ -1,13 +1,14 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import Button from './Button';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +28,25 @@ const Header: React.FC = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const handleSectionClick = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    setMobileMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-8 transition-all duration-300">
       <div
@@ -42,15 +62,24 @@ const Header: React.FC = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#problem" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
+          <button 
+            onClick={() => handleSectionClick('problem')} 
+            className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors"
+          >
             Problem
-          </a>
-          <a href="#solution" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
+          </button>
+          <button 
+            onClick={() => handleSectionClick('solution')} 
+            className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors"
+          >
             Solution
-          </a>
-          <a href="#market" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
+          </button>
+          <button 
+            onClick={() => handleSectionClick('market')} 
+            className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors"
+          >
             Market
-          </a>
+          </button>
           <Link to="/about" className="text-sm font-medium text-gray-700 hover:text-housify-blue transition-colors">
             About
           </Link>
@@ -90,27 +119,24 @@ const Header: React.FC = () => {
         </div>
         
         <nav className="flex flex-col space-y-6">
-          <a 
-            href="#problem" 
-            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"
-            onClick={toggleMobileMenu}
+          <button 
+            onClick={() => handleSectionClick('problem')}
+            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors text-left"
           >
             Problem
-          </a>
-          <a 
-            href="#solution" 
-            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"
-            onClick={toggleMobileMenu}
+          </button>
+          <button 
+            onClick={() => handleSectionClick('solution')}
+            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors text-left"
           >
             Solution
-          </a>
-          <a 
-            href="#market" 
-            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"
-            onClick={toggleMobileMenu}
+          </button>
+          <button 
+            onClick={() => handleSectionClick('market')}
+            className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors text-left"
           >
             Market
-          </a>
+          </button>
           <Link 
             to="/about" 
             className="text-lg font-medium text-gray-700 hover:text-housify-blue transition-colors"
